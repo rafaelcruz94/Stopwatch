@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +28,17 @@ main {
   text-align: center;
 }
 
-#display{
-    font-size: 3em;
+#clock {
+  font-size: 2.5rem;
 }
 
-.buttons {
+#day {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.buttonsLine {
   display: inline-flex;
 }
 
@@ -39,45 +47,43 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  margin-bottom: 1em;
-  font-size: 1rem;
-  margin-right: 1em;
+  margin-top: 1em;
+  font-size: 1em;
 }
 
-button:last-child {
-  margin-right: 0em;
+button:first-child {
+  margin-right: 2em;
 }
 
 button:hover {
   text-decoration: underline;
-  text-underline-offset: 10px;
+  text-underline-offset: 3px;
 }
 
-button:active {
+button:active,
+button:focus {
   color: rgb(0, 255, 151);
   outline: none;
 }
 
-h4{
-    margin-bottom: 0.2em;
+.active {
+  color: rgb(0, 255, 151);
 }
 
-#lapText{
-    font-size: 0.5rem;
-    color: whitesmoke;
+.inactive {
+  color: whitesmoke;
 }
 
 @media only screen and (min-width: 720px) {
-    html,
-    body {
-      font-size: 35px;
-    }
+  html,
+  body {
+    font-size: 35px;
   }
-  
-  @media only screen and (min-width: 1080px) {
-    html,
-    body {
-      font-size: 50px;
-    }
+}
+
+@media only screen and (min-width: 1080px) {
+  html,
+  body {
+    font-size: 50px;
   }
-  
+}
